@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+    <title>Yummy</title>
+
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body class=" bg-black">
+
+
+    <div class=" position-fixed z-3 bg-black bar">
+                    <div class="inner-bar vh-100 position-fixed p-3 bg-black ">
+                        <div class=" links">
+                            <p><a href="#search" class=" nav-links text-white" onclick="displaySearch()">Search</a></p>
+                            <p><a href="#categories" class=" nav-links text-white" onclick="getCategory()">Categories</a></p>
+                            <p><a href="#" class=" nav-links text-white" onclick="getArea()">Area</a></p>
+                            <p><a href="#" class=" nav-links text-white" onclick="getIngredient()">Ingredients</a></p>
+                            <p><a href="#contact" class=" nav-links text-white" onclick="contactForm()" >Contact us</a></p>
+                        </div>
+                        <div class=" text-white position-absolute bottom-0 bg-black">
+                            <i class="fa-brands fa-facebook"></i>
+                            <i class="fa-brands fa-twitter"></i>
+                            <i class="fa-solid fa-globe"></i>
+                            <p>Copyright Â© 2019 All Rights Reserved</p>
+                        </div>
+                    </div>
+                    <div class="side-bar bg-white position-fixed vh-100 d-flex flex-column align-items-center justify-content-around">
+                        <img src="images/logo.png" alt="logo" class=" img-fluid w-75">
+                        <i class="fa-solid fa-xmark fs-3"></i>
+                        <i class="fa-solid fa-bars fs-3"></i>
+                        <div class=" d-flex flex-column gap-2">
+                            <i class="fa-solid fa-globe fs-6"></i>
+                            <i class="fa-solid fa-share-nodes fs-6"></i>
+                        </div>
+                    </div>
+    </div>
+
+    <section>
+        <div class="container w-75" id="searchDiv">
+
+        </div>
+        </section>
+    
+
+    <div class="loading-screen min-vh-100 position-fixed z-3  start-0 end-0 bottom-0 bg-black justify-content-center align-items-center" style="display: none;">
+        <i class="fa fa-spinner fa-spin fa-5x "></i>
+    </div>
+
+    <div class="inner-loading-screen  bg-black z-3 text-white position-fixed top-0 start-0 end-0 bottom-0" style="display: none;">
+        <div class="d-flex justify-content-center align-items-center min-vh-100">
+        <i class="fa fa-spinner fa-spin fa-5x"></i></div>
+    </div>
+
+
+    <div class="container pt-5">
+        <div class="row  g-2 py-5" id="dataa">    
+        </div>
+    </div>
+
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>

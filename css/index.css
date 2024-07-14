@@ -1,0 +1,50 @@
+a{
+    text-decoration: none;
+}
+
+.side-bar{
+    width: 5%;
+    left: 0%;
+}
+.inner-bar{
+    width: 18%;
+    left: 0%;
+    display: none;
+}
+.fa-xmark{
+    display: none;
+}
+i{
+    cursor: pointer;
+}
+
+
+.layer{
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    transform: translateY(100%);
+    transition: all 0.5s;
+}
+.image{
+    overflow: hidden;
+    cursor: pointer;
+}
+.image:hover .layer{
+    transform: translateY(0px);
+
+}
+button, a{
+    color: white;
+}
+button{
+    transition: all;
+}
+button, .b1:hover{
+    background-color: rgb(10, 117, 10) !important;
+}
+
+button, .b2:hover{
+    background-color:rgb(160, 8, 8) !important;
+}

@@ -147,13 +147,18 @@ function displayCategory(catData){
     let res =``;
     for(let i=0; i< catData.length; i++){
         res += `
-            <div class=" col-lg-3 col-md-6 col-sm-12 ">
+            <div class=" col-lg-3 col-md-6 col-sm-12 overflow-hidden">
                 <div class=" image rounded-3 position-relative p-1" onclick="catDetails('${catData[i].strCategory}')">
+                 <div class =" position-relative">
                     <img src="${catData[i].strCategoryThumb}" alt="img" class=" w-100 rounded-3">
                 <div class="layer bg-white opacity-75 position-absolute top-0 start-0 p-2 rounded-3 d-flex flex-column justify-content-center">
                     <h3>${catData[i].strCategory}</h3>
-                    <p>${catData[i].strCategoryDescription}</p>
-                </div></div>
+                    <p class='z-1 overflow-hidden'>${catData[i].strCategoryDescription}</p>
+                </div>
+                 
+                 </div>
+            
+                </div>
             </div>
         `
     }
